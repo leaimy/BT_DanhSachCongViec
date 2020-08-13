@@ -21,7 +21,7 @@ body {
 .container {
   max-width: 500px;
   width: 100%;
-  background-color: lightcoral;
+  /*background-color: lightcoral;*/
 }
 .tieude {
   text-align: center;
@@ -39,12 +39,13 @@ body {
 .bieumau .nutbam_them {
   flex-basis: 100px;
   padding: 10px;
+  cursor: pointer;
 }
 .danhsach {
   list-style: none;
 }
 .danhsach .dscon {
-  background-color: lawngreen;
+  /*background-color: lawngreen;*/
   margin-bottom: 10px;
   padding: 10px;
   position: relative;
@@ -54,4 +55,29 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+.nutbam_1 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid rgb(69, 221, 95);
+  color: rgb(69, 221, 95);
+  cursor: pointer;
+}
+.nutbam_2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid red;
+  color: red;
+  cursor: pointer;
+}
+.nutbam_xoa {
+  padding: 10px 30px;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  cursor: pointer;
 }

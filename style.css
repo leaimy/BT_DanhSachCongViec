@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background-color: lightcoral;
+}
+.tieude {
+  text-align: center;
+  margin: 20px 0;
+}
+.bieumau {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+}
+.bieumau .input {
+  flex: 1;
+  padding: 10px;
+}
+.bieumau .nutbam_them {
+  flex-basis: 100px;
+  padding: 10px;
+}
+.danhsach {
+  list-style: none;
+}
+.danhsach .dscon {
+  background-color: lawngreen;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+}
+.nutbam {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -50,6 +50,7 @@ body {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   position: relative;
+  cursor: pointer;
 }
 .danhsach .dscon.danhdau {
   text-decoration: line-through;

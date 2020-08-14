@@ -26,5 +26,5 @@ dsCongViec.appendChild(congviec);
 dsCongViec.append(congviec1, congviec2, congviec3, congviec4);
 
 function clickCongViec(congviec) {
-  congviec.classList.toggle("click");
+  congviec.classList.toggle("danhdau");
 }

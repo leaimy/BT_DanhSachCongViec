@@ -12,6 +12,7 @@ function themCongViec(tenCongViec) {
   congviec.addEventListener("click", function () {
     clickCongViec(congviec);
   });
+
   return congviec;
 }
 
@@ -25,5 +26,5 @@ dsCongViec.appendChild(congviec);
 dsCongViec.append(congviec1, congviec2, congviec3, congviec4);
 
 function clickCongViec(congviec) {
-  congviec.classList.toggle("danhdau");
+  congviec.classList.toggle("click");
 }

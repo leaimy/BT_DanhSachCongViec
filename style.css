@@ -48,7 +48,12 @@ body {
   /*background-color: lawngreen;*/
   margin-bottom: 10px;
   padding: 10px;
+  border-bottom: 1px solid #ccc;
   position: relative;
+}
+.danhsach .dscon.danhdau {
+  text-decoration: line-through;
+  background-color: pink;
 }
 .nutbam {
   position: absolute;
@@ -64,6 +69,10 @@ body {
   color: rgb(69, 221, 95);
   cursor: pointer;
 }
+.nutbam_1.tick {
+  background-color: rgb(69, 221, 95);
+  color: white;
+}
 .nutbam_2 {
   width: 25px;
   height: 25px;
@@ -76,8 +85,12 @@ body {
   padding: 10px 30px;
   font-size: 20px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  margin: 10px auto;
   cursor: pointer;
+  border: 2px solid rgb(218, 72, 97);
+  color: rgb(218, 72, 97);
+}
+
+.nutbam_xoa:focus {
+  outline: none;
 }

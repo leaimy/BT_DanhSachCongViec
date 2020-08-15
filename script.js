@@ -1,6 +1,19 @@
 var dsCongViec = document.getElementById("danhsach");
 
+var danhsach = [
+  "Tập thể dục",
+  "Học làm web",
+  "Đọc sách",
+  "Làm việc nhà",
+  "Xem phim",
+];
+
+themVaoDanhSach();
+
 function themCongViec(tenCongViec) {
+  function clickCongViec(congviec) {
+    congviec.classList.toggle("danhdau");
+  }
   var congviec = document.createElement("li");
   congviec.classList.add("dscon");
   congviec.innerHTML = `<span>${tenCongViec}</span>
@@ -16,15 +29,17 @@ function themCongViec(tenCongViec) {
   return congviec;
 }
 
-var congviec = themCongViec("Tập thể dục");
-var congviec1 = themCongViec("Học làm web");
-var congviec2 = themCongViec("Đọc sách");
-var congviec3 = themCongViec("Làm việc nhà");
-var congviec4 = themCongViec("Xem phim");
-
-dsCongViec.appendChild(congviec);
-dsCongViec.append(congviec1, congviec2, congviec3, congviec4);
-
-function clickCongViec(congviec) {
-  congviec.classList.toggle("danhdau");
+function themVaoDanhSach() {
+  for (var i = 0; i < danhsach.length; i++) {
+    var congviec = themCongViec(danhsach[i]);
+    dsCongViec.appendChild(congviec);
+  }
 }
+
+// var nutbam_1 = document.getElementsByClassName("nutbam_1")[0];
+// nutbam_1.addEventListener("click", function () {
+//   click(nutbam_1);
+// });
+// function click(nutbam) {
+//   nutbam.classList.toggle("tick");
+// }

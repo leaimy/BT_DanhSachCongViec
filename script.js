@@ -17,10 +17,6 @@ function themCongViec(tenCongViec) {
     congviec.classList.toggle("danhdau");
   }
 
-  function click(nutbam) {
-    nutbam.classList.toggle("tick");
-  }
-
   var congviec = document.createElement("li");
   congviec.classList.add("dscon");
   congviec.innerHTML = `<span>${tenCongViec}</span>
@@ -32,10 +28,6 @@ function themCongViec(tenCongViec) {
   congviec.addEventListener("click", function () {
     clickCongViec(congviec);
   });
-  var nutbam = document.getElementsByClassName("nutbam_1[0]");
-  // nutbam.addEventListener("click", function () {
-  //   click(nutbam);
-  // });
 
   return congviec;
 }

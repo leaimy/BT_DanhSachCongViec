@@ -35,11 +35,3 @@ function themVaoDanhSach() {
     dsCongViec.appendChild(congviec);
   }
 }
-
-// var nutbam_1 = document.getElementsByClassName("nutbam_1")[0];
-// nutbam_1.addEventListener("click", function () {
-//   click(nutbam_1);
-// });
-// function click(nutbam) {
-//   nutbam.classList.toggle("tick");
-// }

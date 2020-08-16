@@ -1,6 +1,7 @@
 var dsCongViec = document.getElementById("danhsach");
 var bieumau = document.getElementById("bieumau");
 var input = document.getElementById("input");
+var xoaTatCa = document.getElementById("nutbam_xoa");
 
 var danhsach = [
   "Tập thể dục",
@@ -9,6 +10,7 @@ var danhsach = [
   "Làm việc nhà",
   "Xem phim",
 ];
+input.focus();
 
 themVaoDanhSach();
 
@@ -33,6 +35,7 @@ function themCongViec(tenCongViec) {
 }
 
 function themVaoDanhSach() {
+  dsCongViec.innerHTML = "";
   for (var i = 0; i < danhsach.length; i++) {
     var congviec = themCongViec(danhsach[i]);
     dsCongViec.appendChild(congviec);
@@ -45,9 +48,14 @@ bieumau.addEventListener("submit", function (event) {
   var congViecMoi = input.value;
   if (congViecMoi.trim().length > 0) {
     danhsach.push(congViecMoi);
-    dsCongViec.innerHTML = "";
+
     themVaoDanhSach();
 
     input.value = "";
   }
+});
+
+xoaTatCa.addEventListener("click", function () {
+  danhsach = [];
+  themVaoDanhSach();
 });

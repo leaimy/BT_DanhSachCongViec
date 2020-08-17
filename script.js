@@ -14,6 +14,17 @@ input.focus();
 
 themVaoDanhSach();
 
+function xoaCongViec(tenCVCanXoa) {
+  const danhsachmoi = [];
+  for (var i = 0; i < danhsach.length; i++) {
+    if (danhsach[i] !== tenCVCanXoa) {
+      danhsachmoi.push(danhsach[i]);
+    }
+  }
+
+  danhsach = danhsachmoi;
+  themVaoDanhSach();
+}
 function themCongViec(tenCongViec) {
   function clickCongViec(congviec) {
     congviec.classList.toggle("danhdau");
@@ -24,8 +35,9 @@ function themCongViec(tenCongViec) {
   congviec.innerHTML = `<span>${tenCongViec}</span>
         <span class="nutbam">
           <button class="nutbam_1"><i class="fas fa-check"></i></button>
-          <button class="nutbam_2"><b>X</b></button>
+          <button onClick="xoaCongViec('${tenCongViec}')" class="nutbam_2" ><b>X</b></button>
         </span>`;
+
   //Thêm sự kiện
   congviec.addEventListener("click", function () {
     clickCongViec(congviec);

@@ -12,6 +12,7 @@ body {
   height: 100vh;
   font-family: sans-serif;
   font-size: 20px;
+  background-color: pink;
 
   display: flex;
   justify-content: center;
@@ -52,10 +53,7 @@ body {
   position: relative;
   cursor: pointer;
 }
-.danhsach .dscon.danhdau {
-  text-decoration: line-through;
-  background-color: pink;
-}
+
 .nutbam {
   position: absolute;
   right: 10px;

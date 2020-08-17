@@ -14,6 +14,15 @@ input.focus();
 
 themVaoDanhSach();
 
+function tickCongViec(tenCVCanTick) {
+  var nutbam = document.getElementsByClassName("nutbam_1");
+  for (var i = 0; i < danhsach.length; i++) {
+    if (danhsach[i] === tenCVCanTick) {
+      nutbam[i].classList.toggle("tick");
+    }
+  }
+}
+
 function xoaCongViec(tenCVCanXoa) {
   const danhsachmoi = [];
   for (var i = 0; i < danhsach.length; i++) {
@@ -25,23 +34,15 @@ function xoaCongViec(tenCVCanXoa) {
   danhsach = danhsachmoi;
   themVaoDanhSach();
 }
-function themCongViec(tenCongViec) {
-  function clickCongViec(congviec) {
-    congviec.classList.toggle("danhdau");
-  }
 
+function themCongViec(tenCongViec) {
   var congviec = document.createElement("li");
   congviec.classList.add("dscon");
   congviec.innerHTML = `<span>${tenCongViec}</span>
         <span class="nutbam">
-          <button class="nutbam_1"><i class="fas fa-check"></i></button>
+          <button onClick="tickCongViec('${tenCongViec}')" class="nutbam_1"><i class="fas fa-check"></i></button>
           <button onClick="xoaCongViec('${tenCongViec}')" class="nutbam_2" ><b>X</b></button>
         </span>`;
-
-  //Thêm sự kiện
-  congviec.addEventListener("click", function () {
-    clickCongViec(congviec);
-  });
 
   return congviec;
 }

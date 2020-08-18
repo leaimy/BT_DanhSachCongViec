@@ -64,10 +64,6 @@ body {
   outline: none;
 }
 
-.danhsach {
-  list-style: none;
-}
-
 .danhsach .dscon {
   /*background-color: lawngreen;*/
   margin-bottom: 10px;

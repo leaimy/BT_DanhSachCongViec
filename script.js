@@ -16,6 +16,7 @@ themVaoDanhSach();
 
 function tickCongViec(tenCVCanTick) {
   var nutbam = document.getElementsByClassName("nutbam_1");
+
   for (var i = 0; i < danhsach.length; i++) {
     if (danhsach[i] === tenCVCanTick) {
       nutbam[i].classList.toggle("tick");

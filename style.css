@@ -10,9 +10,9 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  font-family: sans-serif;
+  font-family: "Lobster", cursive;
   font-size: 20px;
-  background-color: pink;
+  background-color: #fe91ca;
 
   display: flex;
   justify-content: center;
@@ -27,20 +27,36 @@ body {
 .tieude {
   text-align: center;
   margin: 20px 0;
+  color: #d3f4ff;
 }
 .bieumau {
   width: 100%;
   margin-bottom: 20px;
   display: flex;
+  border: 2px solid #d3f4ff;
 }
 .bieumau .input {
   flex: 1;
   padding: 10px;
+  color: #4d80e4;
+  font-size: 16px;
+  font-family: "Lobster", cursive;
+}
+
+.input:focus {
+  outline: none;
 }
 .bieumau .nutbam_them {
   flex-basis: 100px;
   padding: 10px;
   cursor: pointer;
+  background-color: #4d80e4;
+  color: #fe91ca;
+  font-size: 16px;
+  font-family: "Lobster", cursive;
+}
+.nutbam_them:focus {
+  outline: none;
 }
 .danhsach {
   list-style: none;
@@ -49,9 +65,11 @@ body {
   /*background-color: lawngreen;*/
   margin-bottom: 10px;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #4d80e4;
   position: relative;
   cursor: pointer;
+
+  color: #d3f4ff;
 }
 
 .nutbam {
@@ -65,9 +83,11 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 2px solid rgb(69, 221, 95);
-  color: rgb(69, 221, 95);
+  /* border: 2px solid rgb(69, 221, 95);
+  color: rgb(69, 221, 95); */
   cursor: pointer;
+  border: 2px solid #4d80e4;
+  color: #4d80e4;
 }
 
 .nutbam_1:focus {
@@ -75,15 +95,18 @@ body {
 }
 
 .nutbam_1.tick {
-  background-color: rgb(69, 221, 95);
+  background-color: #4d80e4;
   color: white;
 }
 .nutbam_2 {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 2px solid red;
-  color: red;
+  /* border: 2px solid red;
+  color: red; */
+  border: 2px solid #4d80e4;
+  background-color: #4d80e4;
+  color: white;
   cursor: pointer;
 }
 
@@ -97,8 +120,10 @@ body {
   display: block;
   margin: 10px auto;
   cursor: pointer;
-  border: 2px solid rgb(218, 72, 97);
-  color: rgb(218, 72, 97);
+  border: 2px solid #d3f4ff;
+  background-color: #4d80e4;
+  color: #fe91ca;
+  font-family: "Lobster", cursive;
 }
 
 .nutbam_xoa:focus {

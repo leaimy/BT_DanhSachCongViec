@@ -4,13 +4,15 @@ var input = document.getElementById("input");
 var xoaTatCa = document.getElementById("nutbam_xoa");
 
 var danhsach = [
-  "Tập thể dục",
-  "Học làm web",
-  "Đọc sách",
-  "Làm việc nhà",
-  "Xem phim",
+  //"Tập thể dục",
+  //"Học làm web",
+  //"Đọc sách",
+  //"Làm việc nhà",
+  //"Xem phim",
 ];
 input.focus();
+
+docDuLieu();
 
 themVaoDanhSach();
 
@@ -34,6 +36,8 @@ function xoaCongViec(tenCVCanXoa) {
 
   danhsach = danhsachmoi;
   themVaoDanhSach();
+  luuDuLieu();
+  input.focus();
 }
 
 function themCongViec(tenCongViec) {
@@ -66,10 +70,27 @@ bieumau.addEventListener("submit", function (event) {
     themVaoDanhSach();
 
     input.value = "";
+    luuDuLieu();
   }
 });
 
 xoaTatCa.addEventListener("click", function () {
   danhsach = [];
   themVaoDanhSach();
+  input.focus();
+  luuDuLieu();
 });
+
+function luuDuLieu() {
+  var danhsachString = JSON.stringify(danhsach);
+  window.localStorage.setItem("danhsach", danhsachString);
+}
+
+function docDuLieu() {
+  var jsonDuLieu = window.localStorage.getItem("danhsach");
+  if (jsonDuLieu === null) {
+    danhsach = [];
+  } else {
+    danhsach = JSON.parse(jsonDuLieu);
+  }
+}

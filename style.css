@@ -24,17 +24,20 @@ body {
   width: 100%;
   /*background-color: lightcoral;*/
 }
+
 .tieude {
   text-align: center;
   margin: 20px 0;
   color: #d3f4ff;
 }
+
 .bieumau {
   width: 100%;
   margin-bottom: 20px;
   display: flex;
   border: 2px solid #d3f4ff;
 }
+
 .bieumau .input {
   flex: 1;
   padding: 10px;
@@ -46,6 +49,7 @@ body {
 .input:focus {
   outline: none;
 }
+
 .bieumau .nutbam_them {
   flex-basis: 100px;
   padding: 10px;
@@ -55,12 +59,15 @@ body {
   font-size: 16px;
   font-family: "Lobster", cursive;
 }
+
 .nutbam_them:focus {
   outline: none;
 }
+
 .danhsach {
   list-style: none;
 }
+
 .danhsach .dscon {
   /*background-color: lawngreen;*/
   margin-bottom: 10px;
@@ -68,7 +75,6 @@ body {
   border-bottom: 1px solid #4d80e4;
   position: relative;
   cursor: pointer;
-
   color: #d3f4ff;
 }
 
@@ -98,6 +104,7 @@ body {
   background-color: #4d80e4;
   color: white;
 }
+
 .nutbam_2 {
   width: 25px;
   height: 25px;

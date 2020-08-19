@@ -44,6 +44,7 @@ function themCongViec(tenCongViec) {
   var congviec = document.createElement("li");
   congviec.classList.add("dscon");
   congviec.innerHTML = `<span>${tenCongViec}</span>
+
         <span class="nutbam">
           <button onClick="tickCongViec('${tenCongViec}')" class="nutbam_1"><i class="fas fa-check"></i></button>
           <button onClick="xoaCongViec('${tenCongViec}')" class="nutbam_2" ><b>X</b></button>
